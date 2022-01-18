@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/EnesKilicaslan/instagram-clone/issues"
   },
-  "homepage": "https://github.com/EnesKilicaslan/instagram-clone#readme"
+  "homepage": "https://github.com/EnesKilicaslan/instagram-clone#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/preset-react": "^7.16.7"
+  }
 }
