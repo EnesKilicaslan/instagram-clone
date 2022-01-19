@@ -1,16 +1,16 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin"); //installed via npm
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin') //installed via npm
 
-const webpack = require("webpack"); //to access built-in plugins
+const webpack = require('webpack') //to access built-in plugins
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, "..", "build"),
-    filename: "bundle.js",
+    path: path.resolve(__dirname, '..', 'build'),
+    filename: 'bundle.js'
   },
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: ['.js', '.jsx']
   },
   module: {
     rules: [
@@ -18,23 +18,23 @@ module.exports = {
         test: /\.(js|mjs|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env"],
-          },
-        },
+            presets: ['@babel/preset-env']
+          }
+        }
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader", "postcss-loader"],
+        use: ['style-loader', 'css-loader', 'postcss-loader']
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
-      },
-    ],
+        type: 'asset/resource'
+      }
+    ]
   },
-  mode: "development",
+  mode: 'development',
 
-  plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
-};
+  plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })]
+}
