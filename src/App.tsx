@@ -6,7 +6,7 @@ import Home from './assets/Home.svg'
 function App() {
   return (
     <>
-      <h1>Instagram App</h1>
+      <h1>App</h1>
       <img src={reactImg} alt="Girl in a jacket" width="500" height="600" />
 
       <Home color="red" width={90} height={90} />

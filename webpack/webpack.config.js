@@ -10,12 +10,17 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.tsx', '.ts', '.js', '.jsx']
   },
   module: {
     rules: [
       {
-        test: /\.(js|mjs|jsx)$/,
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.(js)x?$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
