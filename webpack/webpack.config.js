@@ -31,7 +31,31 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader', 'postcss-loader']
+        exclude: /\.module\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
+          },
+          'postcss-loader'
+        ]
+      },
+      {
+        test: /\.module\.css$/i,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: true
+            }
+          },
+          'postcss-loader'
+        ]
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/i,
