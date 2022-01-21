@@ -1,17 +1,23 @@
 import React from 'react'
-import './styles/main.css'
-import reactImg from './assets/react.png'
-import Home from './assets/Home.svg'
-import Title from './components/Title'
+import { Routes, Route } from 'react-router-dom'
+import Navigation from './containers/Navigation'
+import { Home, Profile, Posts, IgTv, Saved, Tagged } from './views/'
 
 function App() {
   return (
     <>
-      <Title text="My first Title" />
-      <h1 className="page">App</h1>
-      <img src={reactImg} alt="Girl in a jacket" width="500" height="600" />
+      <Navigation />
 
-      <Home color="red" width={90} height={90} />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/profile" element={<Profile />}>
+          <Route index element={<Posts />} />
+          <Route path="posts" element={<Posts />} />
+          <Route path="igtv" element={<IgTv />} />
+          <Route path="saved" element={<Saved />} />
+          <Route path="tagged" element={<Tagged />} />
+        </Route>
+      </Routes>
     </>
   )
 }

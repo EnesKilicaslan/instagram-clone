@@ -1,5 +1,12 @@
 import ReactDom from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
+
 import App from './App'
 import './styles/main.css'
 
-ReactDom.render(<App />, document.getElementById('instagram'))
+ReactDom.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('instagram')
+)

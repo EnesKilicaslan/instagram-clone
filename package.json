@@ -21,7 +21,8 @@
   "homepage": "https://github.com/EnesKilicaslan/instagram-clone#readme",
   "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-router-dom": "6"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
@@ -30,6 +31,7 @@
     "@svgr/webpack": "^6.2.0",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "@types/react-router-dom": "^5.3.3",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
