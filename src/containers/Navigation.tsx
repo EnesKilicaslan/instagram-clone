@@ -6,8 +6,6 @@ import { Home, Explore, Direct, Like } from './../assets/icons/'
 function Navigation() {
   return (
     <nav className={style.navigation}>
-      Instagram
-      <input type="text" placeholder="search" />
       <NavLink to="/">
         <Home />
       </NavLink>

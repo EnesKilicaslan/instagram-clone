@@ -1,12 +1,12 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Navigation from './containers/Navigation'
+import Header from './containers/Header'
 import { Home, Profile, Posts, IgTv, Saved, Tagged } from './views/'
 
 function App() {
   return (
     <>
-      <Navigation />
+      <Header />
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
