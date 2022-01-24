@@ -1,13 +1,17 @@
 .main {
-  width: 100vw;
-  height: calc(100% - 60px - 1px);
+  width: 100%;
   background-color: rgb(var(--a97));
   z-index: -99;
   position: absolute;
-  top: 60;
-  left: 0;
 }
 
 .mainContainer {
   padding-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (--t) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

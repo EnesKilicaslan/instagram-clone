@@ -1,0 +1,12 @@
+.suggestions {
+  background-color: yellowgreen;
+  display: none;
+  top: 80px;
+  height: 400px;
+  position: sticky;
+  align-self: start;
+
+  @media (--t) {
+    display: block;
+  }
+}

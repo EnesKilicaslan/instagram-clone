@@ -1,0 +1,10 @@
+.home {
+  @media (--t) {
+    width: 100%;
+    display: grid;
+    gap: 30px;
+
+    grid-template-columns: 1fr 265px;
+    align-items: start;
+  }
+}

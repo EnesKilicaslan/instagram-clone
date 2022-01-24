@@ -1,5 +1,22 @@
 .header {
   border-bottom: 1px solid rgb(var(--b6a));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  background-color: white;
+}
+
+.headerContainer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (--t) {
+    justify-content: space-between;
+  }
 }
 
 .logo {
@@ -8,15 +25,13 @@
   font-size: 1.4rem;
 }
 
-.headerContainer {
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .searchContainer {
   color: currentColor;
+  display: none;
+
+  @media (--t) {
+    display: block;
+  }
 }
 
 .search {
