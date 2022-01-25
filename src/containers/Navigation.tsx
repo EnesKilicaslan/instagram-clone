@@ -11,6 +11,7 @@ import {
   Like,
   LikeFill
 } from './../assets/icons/'
+import Avatar from '../components/Avatar/Avatar'
 
 type Active = 'home' | 'dm' | 'explore' | 'likes' | 'profile'
 
@@ -60,7 +61,7 @@ function Navigation() {
         to="/profile"
         style={(activeNav) => activate(activeNav.isActive, 'profile')}
       >
-        Profile
+        <Avatar size="s" />
       </NavLink>
     </nav>
   )
