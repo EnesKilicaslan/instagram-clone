@@ -1,5 +1,6 @@
 .suggestions {
-  background-color: yellowgreen;
+  background: transparent;
+  border: 1px solid #ccc;
   display: none;
   top: 80px;
   height: 400px;
