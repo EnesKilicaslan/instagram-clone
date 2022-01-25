@@ -1,3 +1,6 @@
 .timeline {
-  background-color: burlywood;
+  background: transparent;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
