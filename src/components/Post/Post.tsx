@@ -4,10 +4,13 @@ import postImg from '../../assets/a.jpg'
 import style from './Post.module.css'
 import Actions from './Actions'
 import LikeCount from './LikeCount'
+import Comment from './Comment'
 
-function Post() {
+function Post(props: { ownerCommentName: string; ownerCommentText: string }) {
+  const { ownerCommentName, ownerCommentText } = props
+
   return (
-    <div className={style.post}>
+    <div>
       {/* heading */}
       <Heading />
 
@@ -21,14 +24,13 @@ function Post() {
 
       {/* like count */}
       <LikeCount count={843} />
+      {/* comments */}
 
-      {
-        // comment list
-      }
-
-      {
-        // time
-      }
+      <Comment
+        ownerName={ownerCommentName}
+        ownerText={ownerCommentText}
+        count={32}
+      />
 
       {
         // comment form

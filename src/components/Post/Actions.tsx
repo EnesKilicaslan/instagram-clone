@@ -1,12 +1,22 @@
-import React from 'react'
-import { Like, Comment, Direct, Save } from '../../assets/icons'
+import React, { useState } from 'react'
+import {
+  Like,
+  LikeFill,
+  Comment,
+  Direct,
+  Save,
+  SaveFill
+} from '../../assets/icons'
 import style from './Actions.module.css'
 
 function Actions() {
+  const [isLiked, setIsLiked] = useState(false)
+  const [isSaved, setIsSaved] = useState(false)
+
   return (
     <div className={style.actionButtons}>
-      <button>
-        <Like />
+      <button onClick={() => setIsLiked((prevLike) => !prevLike)}>
+        {isLiked ? <LikeFill className={style.like} /> : <Like />}
       </button>
 
       <button>
@@ -17,13 +27,14 @@ function Actions() {
         <Direct />
       </button>
 
-      <button className={style.last}>
-        <Save />
+      <button
+        className={style.last}
+        onClick={() => setIsSaved((prevSave) => !prevSave)}
+      >
+        {isSaved ? <SaveFill /> : <Save />}
       </button>
     </div>
   )
 }
 
 export default Actions
-
-//#ed4956 liked red color like
