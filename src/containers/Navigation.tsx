@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import style from './Navigation.module.css'
 import {
   Home,
@@ -9,7 +9,8 @@ import {
   Direct,
   DirectFill,
   Like,
-  LikeFill
+  LikeFill,
+  NewPost
 } from './../assets/icons/'
 import Avatar from '../components/Avatar/Avatar'
 
@@ -45,6 +46,9 @@ function Navigation() {
       >
         {active === 'dm' ? <DirectFill /> : <Direct />}
       </NavLink>
+      <Link to="/new-post">
+        <NewPost />
+      </Link>
       <NavLink
         to="/explore"
         style={(activeNav) => activate(activeNav.isActive, 'explore')}
