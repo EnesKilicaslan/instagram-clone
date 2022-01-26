@@ -5,6 +5,7 @@ import style from './Post.module.css'
 import Actions from './Actions'
 import LikeCount from './LikeCount'
 import Comment from './Comment'
+import CommentForm from './CommentForm'
 
 function Post(props: { ownerCommentName: string; ownerCommentText: string }) {
   const { ownerCommentName, ownerCommentText } = props
@@ -31,6 +32,7 @@ function Post(props: { ownerCommentName: string; ownerCommentText: string }) {
         ownerText={ownerCommentText}
         count={32}
       />
+      <CommentForm />
 
       {
         // comment form
