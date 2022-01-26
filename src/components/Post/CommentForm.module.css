@@ -11,10 +11,17 @@
   font-weight: 16px;
   flex-grow: 1;
   outline: none;
+  resize: none;
   padding-left: 16px;
   max-height: 80px;
 }
 
 .submit {
   padding: 16px;
+  font-weight: 700;
+  color: rgba(var(--d69), 0.3);
+}
+
+.filledSubmit {
+  color: rgb(var(--d69));
 }

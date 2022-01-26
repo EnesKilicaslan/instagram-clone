@@ -7,6 +7,7 @@ const LINE_HEIGHT = 16
 function CommentForm() {
   const textareaRef = useRef(null)
   const [numLines, setNumLines] = useState(1)
+  const [textVal, setTextVal] = useState('')
 
   function numOfLines(lineHeight: number) {
     var h0 = textareaRef.current.style.height
@@ -28,13 +29,21 @@ function CommentForm() {
         placeholder="Add a comment..."
         rows={1}
         ref={textareaRef}
-        onChange={() => {
+        onChange={(e) => {
+          setTextVal(e.target.value)
           setNumLines(numOfLines(LINE_HEIGHT))
         }}
         style={{ height: `${numLines * LINE_HEIGHT + 4}px` }}
       ></textarea>
 
-      <button type="button" className={style.submit}>
+      <button
+        type="button"
+        className={
+          textVal.length > 0
+            ? `${style.submit}  ${style.filledSubmit}`
+            : style.submit
+        }
+      >
         Post
       </button>
     </form>
