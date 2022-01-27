@@ -26,6 +26,16 @@ function Suggestions() {
         userName="trainsing"
         name="followed by bork + 12 more"
       />
+
+      <div className={style.instagramInfo}>
+        <p>
+          <a>About</a> - <a>Help</a> - <a>Press</a> - <a>API</a> - <a>Jobs</a>-
+          <a>Privacy</a> - <a>Terms</a> - <a>Locations</a>
+        </p>
+        <p>Top Accounts - Hashtags - Language</p>
+
+        <div>© 2022 INSTAGRAM FROM META</div>
+      </div>
     </div>
   )
 }

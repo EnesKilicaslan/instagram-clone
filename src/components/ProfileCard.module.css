@@ -13,6 +13,7 @@
 
 .slag {
   font-weight: 600;
+  color: rgb(var(--i1d));
 }
 
 .content {

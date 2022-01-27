@@ -42,6 +42,7 @@ a {
   display: inline-block;
   color: currentColor;
   text-decoration: none;
+  cursor: pointer;
 }
 
 img {

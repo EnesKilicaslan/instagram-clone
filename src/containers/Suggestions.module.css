@@ -28,3 +28,16 @@
   padding-right: 4px;
   float: right;
 }
+
+.instagramInfo {
+  color: rgb(var(--f52));
+  font-size: 0.8em;
+  margin-top: 40px;
+  & > p {
+    padding-bottom: 8px;
+  }
+
+  & > div {
+    padding-top: 16px;
+  }
+}
