@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 0.9em;
+}
+
+.userInfo {
+  flex-grow: 1;
+}
+
+.slag {
+  font-weight: 600;
+}
+
+.content {
+  padding-top: 2px;
+  color: rgb(var(--f52));
+}
+
+.profileType {
+  color: rgb(var(--d69));
+  font-weight: 600;
+}

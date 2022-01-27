@@ -1,13 +1,30 @@
-.suggestions {
+.container {
+  padding-top: 16px;
   background: transparent;
-  border: 1px solid #ccc;
   display: none;
   top: 80px;
-  height: 400px;
   position: sticky;
   align-self: start;
 
   @media (--t) {
     display: block;
   }
+}
+
+.viewAll {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.forYouText {
+  display: inline-block;
+  color: rgb(var(--f52));
+}
+
+.seeAllText {
+  font-size: 0.8em;
+  color: rgb(var(--i1d));
+  padding-right: 4px;
+  float: right;
 }
