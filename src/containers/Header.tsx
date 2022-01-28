@@ -3,6 +3,7 @@ import style from './Header.module.css'
 import Navigation from './Navigation'
 import Container from './Container'
 import logo from '../assets/icons/logo.png'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -10,7 +11,9 @@ function Header() {
       <Container className={style.headerContainer}>
         <>
           <div className={style.logo}>
-            <img src={logo} />
+            <Link to="/">
+              <img src={logo} />
+            </Link>
           </div>
 
           <span className={style.searchContainer}>
