@@ -1,6 +1,6 @@
 import React from 'react'
 import Suggestions from '../../containers/Suggestions'
-import Timeline from '../../containers/Timeline'
+import { Timeline } from '../../containers/Timeline'
 import style from './Home.module.css'
 
 function Home() {

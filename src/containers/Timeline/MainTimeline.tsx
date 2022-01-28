@@ -1,6 +1,6 @@
 import React from 'react'
-import Post from '../components/Post/Post'
-import style from './Timeline.module.css'
+import Post from '../../components/Post/Post'
+import style from './MainTimeline.module.css'
 
 const c1Text = `Dünyadan Hava Haberleri!
 ——— 
@@ -29,7 +29,7 @@ hizmeti başlattı.`,
   c2Text = `Alaska yollarında giderken çektiğim fotoğraflar için sağa kaydırın. Yollar her ne kadar tehlikeli olsa da uzun zamandır yaptığım en güzel araba yolculuğuydu. Fotoğrafları direkt yolda durduğum yerden çektim. Sizce nasıl görünüyor? Herkese iyi akşamla`,
   c2Owner = 'mucahitmuglu'
 
-function Timeline() {
+function MainTimeline() {
   return (
     <div className={style.timeline}>
       <Post ownerCommentName={c1Owner} ownerCommentText={c1Text} />
@@ -43,4 +43,4 @@ function Timeline() {
   )
 }
 
-export default Timeline
+export default MainTimeline

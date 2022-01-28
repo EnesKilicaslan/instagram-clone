@@ -3,6 +3,10 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './containers/Header'
 import Main from './containers/Main'
 import { Home, Profile, Posts, IgTv, Saved, Tagged } from './views/'
+import SwiperCore, { Navigation } from 'swiper'
+
+// install Swiper modules
+SwiperCore.use([Navigation])
 
 function App() {
   return (
