@@ -11,7 +11,8 @@ function StoryTimeline() {
       <Swiper
         navigation={{
           prevEl: `.${style.prevSlideArrow}`,
-          nextEl: `.${style.nextSlideArrow}`
+          nextEl: `.${style.nextSlideArrow}`,
+          disabledClass: style.disabledArrow
         }}
         slidesPerView={7.5}
         slidesPerGroup={5}

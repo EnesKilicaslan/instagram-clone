@@ -4,6 +4,8 @@
   height: 100px;
   width: 600px;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prevSlideArrow,
@@ -13,7 +15,7 @@
   width: calc(var(--swiper-navigation-size) / 44 * 27);
   height: var(--swiper-navigation-size);
   margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
-  z-index: 1000000;
+  z-index: 10;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -23,9 +25,6 @@
   /* opacity: 0.35;
   cursor: auto;
   pointer-events: none; */
-
-  left: 10px;
-  right: auto;
 
   &:after {
     font-family: swiper-icons;
@@ -48,7 +47,7 @@
   right: 10px;
 }
 
-.prevSlideArrow-disabled {
+.disabledArrow {
   display: none;
 }
 
