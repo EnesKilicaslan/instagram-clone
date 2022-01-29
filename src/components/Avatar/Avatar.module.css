@@ -25,6 +25,11 @@
   height: 3em;
 }
 
+.xl {
+  width: 9em;
+  height: 9em;
+}
+
 .photo {
   border-radius: inherit;
   /* makes all size of images rounded*/

@@ -1,5 +1,69 @@
+.infoContainer {
+  display: flex;
+  gap: 32px;
+}
+
+.avatarContainer {
+  width: 14em;
+  text-align: center;
+}
+
 .profileNavigation {
+  margin-top: 200px;
   * {
     padding-left: 30px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+
+  .slug {
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.1em;
+    font-weight: 100;
+    color: rgb(var(--i1d));
+    align-self: flex-end;
+  }
+}
+
+.editProfile {
+  font-weight: 600;
+  padding: 8px;
+  border: 1px solid rgb(var(--ca6));
+  border-radius: 4px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.numbers {
+  span {
+    cursor: pointer;
+  }
+
+  span + span {
+    display: inline-block;
+    margin-left: 30px;
+  }
+
+  .numberItem {
+    font-weight: 600;
+  }
+}
+
+.name {
+  font-size: 1.05em;
+  h1 {
+    font-weight: 600;
+    margin-bottom: 4px;
   }
 }
