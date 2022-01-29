@@ -14,7 +14,9 @@ function ProfileCard(props: {
       <Avatar size={type === 'self' ? 'l' : 'm'} />
       <div className={style.userInfo}>
         <div className={style.slag}>{userName}</div>
-        <div className={style.content}>{name}</div>
+        <div className={style.content}>
+          {name.length > 22 ? name.substring(0, 22) + '...' : name}
+        </div>
       </div>
       <button className={style.profileType}>
         {type === 'self' ? 'Switch' : 'Follow'}

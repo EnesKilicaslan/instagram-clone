@@ -30,11 +30,18 @@
 }
 
 .instagramInfo {
-  color: rgb(var(--f52));
-  font-size: 0.8em;
+  color: rgb(var(--edc));
+  font-size: 0.7em;
   margin-top: 40px;
+
   & > p {
     padding-bottom: 8px;
+
+    & > a {
+      &:hover {
+        font-weight: bold;
+      }
+    }
   }
 
   & > div {

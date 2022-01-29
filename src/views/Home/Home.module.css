@@ -2,9 +2,9 @@
   @media (--t) {
     width: 100%;
     display: grid;
-    gap: 30px;
+    gap: 25px;
 
-    grid-template-columns: 1fr 220px;
+    grid-template-columns: 1fr 260px;
     align-items: start;
   }
 }

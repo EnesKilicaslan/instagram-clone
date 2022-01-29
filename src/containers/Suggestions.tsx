@@ -17,15 +17,11 @@ function Suggestions() {
       <ProfileCard
         type="other"
         userName="oasdasdasd"
-        name="followed by nusret + 5 more"
+        name="Followed by nusret + 5 more"
       />
       <ProfileCard type="other" userName="metallica" name="New to Instagram" />
       <ProfileCard type="other" userName="bhscmidscs" name="followed by eric" />
-      <ProfileCard
-        type="other"
-        userName="trainsing"
-        name="followed by bork + 12 more"
-      />
+      <ProfileCard type="other" userName="trainsing" name="Follows you" />
 
       <div className={style.instagramInfo}>
         <p>
