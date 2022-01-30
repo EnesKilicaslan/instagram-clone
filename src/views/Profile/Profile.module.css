@@ -1,18 +1,12 @@
 .infoContainer {
   display: flex;
   gap: 32px;
+  margin-bottom: 32px;
 }
 
 .avatarContainer {
   width: 14em;
   text-align: center;
-}
-
-.profileNavigation {
-  margin-top: 200px;
-  * {
-    padding-left: 30px;
-  }
 }
 
 .info {
@@ -66,4 +60,37 @@
     font-weight: 600;
     margin-bottom: 4px;
   }
+}
+
+.stories {
+  height: 120px;
+}
+
+.profileNavigation {
+  height: 160px;
+}
+
+.navigationContainer {
+  height: 64px;
+  height: 100%;
+  border-top: 1px solid rgb(var(--b38));
+  color: rgb(142, 142, 142);
+  color: black;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  .navigationItem {
+    padding-top: 12px;
+  }
+
+  .navigationItemActive {
+    border-top: 1px solid black;
+  }
+}
+
+.navigationIcon {
+  width: 0.8em;
+  height: 0.8em;
+  padding-top: 0.2em;
 }
