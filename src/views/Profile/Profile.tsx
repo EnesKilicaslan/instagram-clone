@@ -125,6 +125,7 @@ function Profile() {
       </div>
       <br />
       <Outlet />
+      <div className={style.end} />
     </>
   )
 }
