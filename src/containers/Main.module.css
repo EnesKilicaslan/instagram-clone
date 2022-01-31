@@ -3,6 +3,7 @@
   background-color: rgb(var(--b3f));
   z-index: -99;
   position: absolute;
+  min-height: calc(100vh - 61px);
 }
 
 .mainContainer {

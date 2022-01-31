@@ -82,15 +82,17 @@
 
   .navigationItem {
     padding-top: 12px;
+    color: rgb(142, 142, 142);
   }
 
   .navigationItemActive {
     border-top: 1px solid black;
+    color: black;
   }
 }
 
 .navigationIcon {
   width: 0.8em;
   height: 0.8em;
-  padding-top: 0.2em;
+  margin-right: 2px;
 }
