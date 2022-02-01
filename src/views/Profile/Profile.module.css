@@ -2,6 +2,8 @@
   display: flex;
   gap: 32px;
   margin-bottom: 32px;
+  padding-left: 32px;
+  font-size: 17px;
 }
 
 .avatarContainer {
@@ -63,12 +65,15 @@
 }
 
 .stories {
-  height: 120px;
+  //height: 120px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  padding-left: 32px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 12px;
-  font-size: 19px;
+  font-size: 22px;
 }
 
 .navigationContainer {
