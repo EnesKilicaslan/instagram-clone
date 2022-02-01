@@ -8,6 +8,7 @@ import {
   IGTV as IGTVIcon
 } from '../../assets/icons'
 import Avatar from '../../components/Avatar/Avatar'
+import ProfileStory from '../../components/Profile/ProfileStory'
 import style from './Profile.module.css'
 
 type RouteType = 'posts' | 'igtv' | 'saved' | 'tagged'
@@ -46,7 +47,11 @@ function Profile() {
         </section>
       </div>
 
-      <div className={style.stories}></div>
+      <div className={style.stories}>
+        <ProfileStory slug="friends" />
+        <ProfileStory slug="berlin" />
+        <ProfileStory slug="hangout" />
+      </div>
 
       <div className={style.profileNavigation}>
         <div className={style.navigationContainer}>

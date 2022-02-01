@@ -64,6 +64,11 @@
 
 .stories {
   height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  font-size: 19px;
 }
 
 .navigationContainer {
