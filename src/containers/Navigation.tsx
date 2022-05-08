@@ -11,7 +11,7 @@ import {
   Like,
   LikeFill,
   NewPost
-} from './../assets/icons/'
+} from './../assets/icons'
 import Avatar from '../components/Avatar/Avatar'
 
 type Active = 'home' | 'dm' | 'explore' | 'likes' | 'profile'
