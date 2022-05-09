@@ -5,7 +5,7 @@ import App from './App'
 import './styles/main.css'
 
 ReactDom.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/instagram-clone">
     <App />
   </BrowserRouter>,
   document.getElementById('instagram')
