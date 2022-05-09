@@ -6,7 +6,6 @@ const webpack = require('webpack') //to access built-in plugins
 module.exports = {
   entry: './src/index.js',
   output: {
-    publicPath: '/',
     path: path.resolve(__dirname, '..', 'build'),
     filename: 'bundle.js'
   },
