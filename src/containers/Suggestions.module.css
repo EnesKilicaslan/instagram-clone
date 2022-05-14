@@ -31,7 +31,7 @@
 
 .instagramInfo {
   color: rgb(var(--edc));
-  font-size: 0.7em;
+  font-size: 0.64em;
   margin-top: 40px;
 
   & > p {
@@ -39,7 +39,7 @@
 
     & > a {
       &:hover {
-        font-weight: bold;
+        text-shadow: 0 0 0.02px black;
       }
     }
   }

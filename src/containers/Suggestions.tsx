@@ -28,7 +28,9 @@ function Suggestions() {
           <a>About</a> - <a>Help</a> - <a>Press</a> - <a>API</a> - <a>Jobs</a>-
           <a>Privacy</a> - <a>Terms</a> - <a>Locations</a>
         </p>
-        <p>Top Accounts - Hashtags - Language</p>
+        <p>
+          <a>Top Accounts</a> - <a>Hashtags</a> - <a>Language</a>
+        </p>
 
         <div>© 2022 INSTAGRAM FROM META</div>
       </div>
