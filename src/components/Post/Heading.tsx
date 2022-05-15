@@ -3,16 +3,22 @@ import style from './Heading.module.css'
 import { More } from '../../assets/icons'
 import Avatar from '../Avatar/Avatar'
 
-function Heading() {
+function Heading({
+  profileImg,
+  location
+}: {
+  profileImg?: string
+  location?: string
+}) {
   const [isMoreOpen, setIsMoreOpen] = useState(false)
 
   return (
     <div className={style.header}>
       <div className={style.owner}>
-        <Avatar size="l" />
+        <Avatar size="l" img={profileImg} />
         <div className={style.info}>
           <div className={style.username}>modernlife</div>
-          <div className={style.location}>Palo Alto, California</div>
+          {location && <div className={style.location}>{location}</div>}
         </div>
       </div>
 

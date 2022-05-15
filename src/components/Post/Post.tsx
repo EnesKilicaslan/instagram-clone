@@ -10,24 +10,34 @@ function Post(props: {
   ownerCommentName: string
   ownerCommentText: string
   src: string
+  profileImg?: string
+  location?: string
+  likeCount: number
 }) {
-  const { ownerCommentName, ownerCommentText, src } = props
+  const {
+    ownerCommentName,
+    ownerCommentText,
+    src,
+    profileImg,
+    location,
+    likeCount
+  } = props
 
   return (
     <div>
       {/* heading */}
-      <Heading />
+      <Heading profileImg={profileImg} location={location} />
 
       {/* media */}
       <div className={style.media}>
-        <img alt="Girl in a jacket" src={src} />
+        <img alt="" src={src} />
       </div>
 
       {/* actions */}
       <Actions />
 
       {/* like count */}
-      <LikeCount count={843} />
+      <LikeCount count={likeCount} />
       {/* comments */}
 
       <Comment

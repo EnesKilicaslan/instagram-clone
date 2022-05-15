@@ -6,6 +6,11 @@ import post2Img from '../../assets/therock-1.jpg'
 import post3Img from '../../assets/selena-1.jpg'
 import post4Img from '../../assets/beyonce-1.jpg'
 
+import post1ProfileImg from '../../assets/natgeo-profile.jpg'
+import post2ProfileImg from '../../assets/therock-profile.jpg'
+import post3ProfileImg from '../../assets/selena-profile.jpg'
+import post4ProfileImg from '../../assets/beyonce-profile.jpg'
+
 const c1Text = `Photo by Robbie Shone @shonephoto | It's rare to touch the roof of a cave in Borneo's Gunung Mulu National Park because the caves are so large. Occasionally, though, sediment fills passages, closing up the gap. Pictured here in a space known as Wind Cave, professor Gina Moseley from Austria's University of Innsbruck admires limestone pendants while standing on one of these giant sediment banks. She's en route to a sampling site used by a team of paleoclimatologists.`,
   c1Owner = 'natgeo'
 
@@ -33,6 +38,9 @@ function MainTimeline() {
         ownerCommentName={c1Owner}
         ownerCommentText={c1Text}
         src={post1Img}
+        profileImg={post1ProfileImg}
+        location="Palo Alto, Sanf"
+        likeCount={2344}
       />
       <br />
       <br />
@@ -40,6 +48,9 @@ function MainTimeline() {
         ownerCommentName={c2Owner}
         ownerCommentText={c2Text}
         src={post2Img}
+        profileImg={post2ProfileImg}
+        location="NY City, NY"
+        likeCount={894}
       />
       <br />
       <br />
@@ -47,6 +58,8 @@ function MainTimeline() {
         ownerCommentName={c3Owner}
         ownerCommentText={c3Text}
         src={post3Img}
+        profileImg={post3ProfileImg}
+        likeCount={3923}
       />
       <br />
       <br />
@@ -54,6 +67,9 @@ function MainTimeline() {
         ownerCommentName={c4Owner}
         ownerCommentText={c4Text}
         src={post4Img}
+        profileImg={post4ProfileImg}
+        location="Istanbul"
+        likeCount={100}
       />
       <br />
       <br />
