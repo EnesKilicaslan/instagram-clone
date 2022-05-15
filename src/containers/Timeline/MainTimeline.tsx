@@ -22,9 +22,9 @@ I walked thru the door to a huge D.A.D. surprise made out of 🌹and they jumped
 Every man wants a son, but everyone man NEEDS a daughter.
 
 (yes, that’s a massive pile of homemade birthday brownies and cookies that had no chance of survival once we blew these candles out 🤣💀💨🕯)`,
-  c2Owner = 'mucahitmuglu'
+  c2Owner = 'therock'
 
-const c3Owner = 'therock',
+const c3Owner = 'selena',
   c3Text = `Living in my Rare Impact sweatshirt.❤️ Created in honor of Rare Impact by @RareBeauty’s “Your Words Matter” educational campaign to inspire and educate on the power and influence of your words.
   ​100% of net proceeds support the Rare Impact Fund – our commitment to giving young people access to the resources they need to support their mental health. Available for a limited time only on RareBeauty.com`
 
@@ -38,6 +38,7 @@ function MainTimeline() {
         ownerCommentName={c1Owner}
         ownerCommentText={c1Text}
         src={post1Img}
+        slug={c1Owner}
         profileImg={post1ProfileImg}
         location="Palo Alto, Sanf"
         likeCount={2344}
@@ -48,6 +49,7 @@ function MainTimeline() {
         ownerCommentName={c2Owner}
         ownerCommentText={c2Text}
         src={post2Img}
+        slug={c2Owner}
         profileImg={post2ProfileImg}
         location="NY City, NY"
         likeCount={894}
@@ -58,6 +60,7 @@ function MainTimeline() {
         ownerCommentName={c3Owner}
         ownerCommentText={c3Text}
         src={post3Img}
+        slug={c3Owner}
         profileImg={post3ProfileImg}
         likeCount={3923}
       />
@@ -67,6 +70,7 @@ function MainTimeline() {
         ownerCommentName={c4Owner}
         ownerCommentText={c4Text}
         src={post4Img}
+        slug={c4Owner}
         profileImg={post4ProfileImg}
         location="Istanbul"
         likeCount={100}

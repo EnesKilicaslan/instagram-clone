@@ -10,6 +10,7 @@ function Post(props: {
   ownerCommentName: string
   ownerCommentText: string
   src: string
+  slug: string
   profileImg?: string
   location?: string
   likeCount: number
@@ -18,6 +19,7 @@ function Post(props: {
     ownerCommentName,
     ownerCommentText,
     src,
+    slug,
     profileImg,
     location,
     likeCount
@@ -26,7 +28,7 @@ function Post(props: {
   return (
     <div>
       {/* heading */}
-      <Heading profileImg={profileImg} location={location} />
+      <Heading profileImg={profileImg} location={location} slug={slug} />
 
       {/* media */}
       <div className={style.media}>
