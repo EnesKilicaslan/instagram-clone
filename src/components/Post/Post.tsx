@@ -1,14 +1,17 @@
 import React from 'react'
 import Heading from './Heading'
-import postImg from '../../assets/a.jpg'
 import style from './Post.module.css'
 import Actions from './Actions'
 import LikeCount from './LikeCount'
 import Comment from './Comment'
 import CommentForm from './CommentForm'
 
-function Post(props: { ownerCommentName: string; ownerCommentText: string }) {
-  const { ownerCommentName, ownerCommentText } = props
+function Post(props: {
+  ownerCommentName: string
+  ownerCommentText: string
+  src: string
+}) {
+  const { ownerCommentName, ownerCommentText, src } = props
 
   return (
     <div>
@@ -17,7 +20,7 @@ function Post(props: { ownerCommentName: string; ownerCommentText: string }) {
 
       {/* media */}
       <div className={style.media}>
-        <img alt="Girl in a jacket" width="500" height="600" src={postImg} />
+        <img alt="Girl in a jacket" src={src} />
       </div>
 
       {/* actions */}

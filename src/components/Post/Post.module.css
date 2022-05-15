@@ -1,6 +1,5 @@
 .media {
   overflow: hidden;
-  height: 500px;
 
   & > img {
     height: 100%;

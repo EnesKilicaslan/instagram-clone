@@ -29,7 +29,7 @@ function Comment(props: {
   useEffect(() => {
     if (isMoreVisible) {
       const text =
-        splited[0].length < 120 ? splited[0] : splited[0].substring(120)
+        splited[0].length < 120 ? splited[0] : splited[0].substring(0, 120)
       setMoreText(text)
     }
   }, [isMoreVisible])
@@ -40,6 +40,7 @@ function Comment(props: {
       {isMoreVisible ? (
         <span>
           {moreText}
+
           <a onClick={() => setIsMoreVisible(false)} className={style.more}>
             ...more
           </a>
