@@ -1,7 +1,11 @@
 import React from 'react'
 
 function NoMatch() {
-  return <div> No root</div>
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      not implemented
+    </div>
+  )
 }
 
 export default NoMatch
