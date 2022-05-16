@@ -1136,7 +1136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nfunction NoMatch() {\n    return react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, \" No root\");\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NoMatch);\n\n\n//# sourceURL=webpack://instagram/./src/views/NoMatch.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nfunction NoMatch() {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", { style: { display: 'flex', justifyContent: 'center' } }, \"not implemented\"));\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NoMatch);\n\n\n//# sourceURL=webpack://instagram/./src/views/NoMatch.tsx?");
 
 /***/ }),
 
